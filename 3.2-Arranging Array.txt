@@ -1,0 +1,54 @@
+///Arranging Array
+#include <stdio.h>
+/*
+Enter SIZE of Array
+7
+Enter[7]Elements
+50
+10
+70
+30
+20
+40
+60
+
+10 20 30 40 50 60 70
+*/
+int main()
+{
+ int arr[100];
+ int SIZE,first,next,temp=0;
+
+ /* Determine the matrix size */
+ printf("Enter SIZE of Array\n");
+ scanf("%d",&SIZE);
+
+ /* for loop to get Elements */
+ printf("Enter[%d]Elements\n",SIZE);
+ for(int i=0; i<SIZE; i++)
+ {
+  scanf("%d",&arr[i]);
+ }
+
+  /* for loop to Arranging */
+ for(first=0;first<SIZE-1; first++)
+ {
+  for(next=first+1;next<SIZE;next++)
+  {
+   if(arr[next] < arr[first])
+   {
+     temp=arr[first];
+     arr[first]=arr[next];
+     arr[next]=temp;
+   }
+  }
+ }
+
+ printf("\n");
+ /* for loop to print Elements */
+ for(first=0;first<SIZE;first++)
+ {
+   printf("%d ",arr[first]);
+ }
+  return 0;
+}

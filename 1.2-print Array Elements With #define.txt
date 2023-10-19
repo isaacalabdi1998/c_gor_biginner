@@ -1,0 +1,34 @@
+/* print Array Elements With #define */
+#include <stdio.h>
+#define SIZE 5
+/*
+Enter [5] Elements
+10
+20
+30
+40
+50
+Display Array`s Elements
+10
+20
+30
+40
+50
+*/
+
+int main()
+{
+    int arr[5],i;
+
+    printf("Enter [%d] Elements\n",SIZE);
+    for(i=0; i<SIZE; i++)
+    {
+      scanf("%d",&arr[i]);
+    }
+    printf("Display Array`s Elements\n");
+    for(i=0; i<SIZE; i++)
+    {
+      printf("%d\n",arr[i]);
+    }
+   return 0;
+}

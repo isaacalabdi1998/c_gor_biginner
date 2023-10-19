@@ -1,0 +1,23 @@
+#include <stdio.h>
+/// checking if Number repeated or not
+
+int main()
+{
+  int i,seen,counter=0;
+  int arr[]={1,2,3,4,4,6,7,8,4,10};
+
+  printf("Enter number to check\n");
+  scanf("%d",&seen);
+
+  for(i=0; i<10; i++)
+  {
+   if(arr[i] == seen)
+   {
+    counter++;
+   }
+  }
+
+  printf("The number repeated %d times\n",counter);
+
+return 0;
+}

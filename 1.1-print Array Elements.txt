@@ -1,0 +1,32 @@
+/* print Array Elements */
+#include <stdio.h>
+#include <stdlib.h>
+/* 
+Enter 5 Elements
+10
+20
+30
+40
+50
+Display Array`s Elements
+10
+20
+30
+40
+50 */
+int main()
+{
+    int arr[5],i;
+
+    printf("Enter 5 Elements\n");
+    for(i=0; i<5; i++)
+    {
+      scanf("%d",&arr[i]);
+    }
+    printf("Display Array`s Elements\n");
+    for(i=0; i<5; i++)
+    {
+      printf("%d\n",arr[i]);
+    }
+   return 0;
+}

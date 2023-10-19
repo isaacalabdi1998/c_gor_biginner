@@ -1,0 +1,35 @@
+/* Sum And Avg of Array */
+#include <stdio.h>
+#define SIZE 5
+/*
+Enter SIZE of Elements
+5
+Enter [0]: 10
+Enter [1]: 20
+Enter [2]: 30
+Enter [3]: 40
+Enter [4]: 50
+The Sum of Array = 150
+Average of Array = 30.0
+*/
+
+int main()
+{
+    float avg;
+    int arr[10],i,size,sum=0;
+
+    printf("Enter SIZE of Elements\n");
+    scanf("%d",&size);
+
+    for(i=0; i<size; i++)
+    {
+        printf("Enter [%d]: ",i);
+        scanf("%d",&arr[i]);
+        sum+=arr[i];
+    }
+    avg=(float)sum/size;
+    printf("The Sum of Array = %d\n",sum);
+    printf("Average of Array = %.1f\n",avg);
+
+   return 0;
+}

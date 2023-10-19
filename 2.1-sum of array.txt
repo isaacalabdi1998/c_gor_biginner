@@ -1,0 +1,30 @@
+/* Sum of Array */
+#include<stdio.h>
+/*
+Enter Size of Array
+5
+Enter Array`s Elements
+1
+2
+3
+4
+5
+*/
+int main()
+{
+ int arr[100];
+ int i,SIZE,sum=0;
+
+ printf("Enter Size of Array\n");
+ scanf("%d",&SIZE);
+
+ printf("Enter Array`s Elements\n");
+ for(i=0; i<SIZE; i++)
+ {
+    scanf("%d",&arr[i]);
+    sum+=arr[i];
+ }
+
+ printf("Sum of Array = %d\n",sum);
+ return 0;
+}
